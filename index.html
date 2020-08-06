@@ -6,7 +6,8 @@
     <title>Document</title>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
-    <script src="./toy-vue-router.js"></script>
+    <!-- <script src="./toy-vue-router.js"></script> -->
+    <!-- <script src="./vue-fake-router.js"></script> -->
 </head>
 <body>
     <div id="app">
@@ -17,10 +18,13 @@
         </p>
         <router-view></router-view>
     </div>
+    
     <script>
+        
         // 0. 如果使用模块化机制编程，导入Vue和VueRouter，要调用 Vue.use(VueRouter)
         // 1. 定义 (路由) 组件。
         // 可以从其他文件 import 进来
+        
         const Foo = { template: '<div>foo</div>' }
         const Bar = { template: '<div>bar</div>' }
 
